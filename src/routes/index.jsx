@@ -4,6 +4,8 @@ import Explore from "../pages/explore"
 import Notifications from "../pages/notifications"
 import NotFound from "../pages/notFound"
 import MainLayout from "../layouts/main"
+import Messages from "../pages/messages"
+import Lists from "../pages/lists"
 
 const routes = createBrowserRouter([
 	{
@@ -21,6 +23,14 @@ const routes = createBrowserRouter([
 			{
 				path: 'notifications',
 				element: <Notifications />
+			},
+			{
+				path: 'messages',
+				element: <Messages></Messages>
+			},
+			{
+				path: 'lists',
+				element: <Lists/>
 			},
 			{
 				path: '*',
